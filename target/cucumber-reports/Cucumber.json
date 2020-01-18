@@ -1,0 +1,567 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Registration on Tweetme",
+        "description": "",
+        "id": "tweetme-test;registration-on-tweetme;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11976031293,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Tweetme.co",
+            "match": {
+              "location": "FillOutFormTest.userIsOnTweetmeCo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 720118226,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user is Chosed the registration field",
+            "match": {
+              "location": "FillOutFormTest.theUserIsChosedTheRegistrationField()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3951559192,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Entered Username: \"nowyLogin85\", Email: \"nowy85@nowy.pl\", Password: \"nowyLogin85\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nowyLogin85",
+                  "offset": 19
+                },
+                {
+                  "val": "nowy85@nowy.pl",
+                  "offset": 41
+                },
+                {
+                  "val": "nowyLogin85",
+                  "offset": 69
+                }
+              ],
+              "location": "FillOutFormTest.enteredUsernameEmailPassword(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 129958347,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user is registrated in Tweetme",
+            "match": {
+              "location": "FillOutFormTest.theUserIsRegistratedInTweetme()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Login the user in cases: \"Valid Username And Password\"",
+        "description": "",
+        "id": "tweetme-test;login-the-user-in-cases:-\"\u003ccases\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10446014156,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User is on Tweetme.co",
+            "match": {
+              "location": "FillOutFormTest.userIsOnTweetmeCo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2106170337,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Entered Login: \"krzysztofKordecki\" and Password: \"specjalnosciowe\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "krzysztofKordecki",
+                  "offset": 16
+                },
+                {
+                  "val": "specjalnosciowe",
+                  "offset": 50
+                }
+              ],
+              "location": "FillOutFormTest.enteredLoginAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134278765,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "The user is logged",
+            "match": {
+              "location": "FillOutFormTest.theUserIsLogged()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Write message on Tweetme",
+        "description": "",
+        "id": "tweetme-test;write-message-on-tweetme",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9953483765,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User is on Tweetme.co",
+            "match": {
+              "location": "FillOutFormTest.userIsOnTweetmeCo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2059292489,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "The user is logged in Tweetme",
+            "match": {
+              "location": "FillOutFormTest.theUserIsLoggedInTweetme()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1202963099,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Entered message on Tweetme",
+            "match": {
+              "location": "FillOutFormTest.enteredMessageOnTweetme()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1068005467,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "The message is displayed",
+            "match": {
+              "location": "FillOutFormTest.theMessageIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Inviled login the user in cases: \"Empty Password\"",
+        "description": "",
+        "id": "tweetme-test;inviled-login-the-user-in-cases:-\"\u003ccases\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10043801212,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User is on Tweetme.co",
+            "match": {
+              "location": "FillOutFormTest.userIsOnTweetmeCo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 679696944,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Entered Login: \"krzysztofKordecki\" and Password: \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "krzysztofKordecki",
+                  "offset": 16
+                },
+                {
+                  "val": "",
+                  "offset": 50
+                }
+              ],
+              "location": "FillOutFormTest.enteredLoginAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4485890987,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "The user isn\u0027t logged",
+            "match": {
+              "location": "FillOutFormTest.theUserIsnTLogged()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 42,
+        "name": "Inviled login the user in cases: \"Empty Username\"",
+        "description": "",
+        "id": "tweetme-test;inviled-login-the-user-in-cases:-\"\u003ccases\u003e\";;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9826967880,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User is on Tweetme.co",
+            "match": {
+              "location": "FillOutFormTest.userIsOnTweetmeCo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 662508664,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Entered Login: \"\" and Password: \"specjalnosciowe\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 16
+                },
+                {
+                  "val": "specjalnosciowe",
+                  "offset": 33
+                }
+              ],
+              "location": "FillOutFormTest.enteredLoginAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34059645422,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "The user isn\u0027t logged",
+            "match": {
+              "location": "FillOutFormTest.theUserIsnTLogged()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "Inviled login the user in cases: \"Empty Username And Password\"",
+        "description": "",
+        "id": "tweetme-test;inviled-login-the-user-in-cases:-\"\u003ccases\u003e\";;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9752849757,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User is on Tweetme.co",
+            "match": {
+              "location": "FillOutFormTest.userIsOnTweetmeCo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 635805418,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Entered Login: \"\" and Password: \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 16
+                },
+                {
+                  "val": "",
+                  "offset": 33
+                }
+              ],
+              "location": "FillOutFormTest.enteredLoginAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3733223377,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "The user isn\u0027t logged",
+            "match": {
+              "location": "FillOutFormTest.theUserIsnTLogged()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 44,
+        "name": "Inviled login the user in cases: \"Invalid Username\"",
+        "description": "",
+        "id": "tweetme-test;inviled-login-the-user-in-cases:-\"\u003ccases\u003e\";;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9890900260,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User is on Tweetme.co",
+            "match": {
+              "location": "FillOutFormTest.userIsOnTweetmeCo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 891826194,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Entered Login: \"bdsgdfhfd\" and Password: \"specjalnosciowe\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bdsgdfhfd",
+                  "offset": 16
+                },
+                {
+                  "val": "specjalnosciowe",
+                  "offset": 42
+                }
+              ],
+              "location": "FillOutFormTest.enteredLoginAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3736409518,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "The user isn\u0027t logged",
+            "match": {
+              "location": "FillOutFormTest.theUserIsnTLogged()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "Inviled login the user in cases: \"Invalid Password\"",
+        "description": "",
+        "id": "tweetme-test;inviled-login-the-user-in-cases:-\"\u003ccases\u003e\";;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9204859344,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User is on Tweetme.co",
+            "match": {
+              "location": "FillOutFormTest.userIsOnTweetmeCo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 891225593,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Entered Login: \"krzysztofKordecki\" and Password: \"4ererererer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "krzysztofKordecki",
+                  "offset": 16
+                },
+                {
+                  "val": "4ererererer",
+                  "offset": 50
+                }
+              ],
+              "location": "FillOutFormTest.enteredLoginAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3978509231,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "The user isn\u0027t logged",
+            "match": {
+              "location": "FillOutFormTest.theUserIsnTLogged()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 46,
+        "name": "Inviled login the user in cases: \"Invalid Username And Password\"",
+        "description": "",
+        "id": "tweetme-test;inviled-login-the-user-in-cases:-\"\u003ccases\u003e\";;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9733563479,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User is on Tweetme.co",
+            "match": {
+              "location": "FillOutFormTest.userIsOnTweetmeCo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 864104482,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Entered Login: \"fgffbdfhghh\" and Password: \"bgh6tgj6q5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fgffbdfhghh",
+                  "offset": 16
+                },
+                {
+                  "val": "bgh6tgj6q5",
+                  "offset": 44
+                }
+              ],
+              "location": "FillOutFormTest.enteredLoginAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4037530524,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "The user isn\u0027t logged",
+            "match": {
+              "location": "FillOutFormTest.theUserIsnTLogged()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Tweetme Test",
+    "description": "",
+    "id": "tweetme-test",
+    "keyword": "Feature",
+    "uri": "src/test/resource/InvalidLoginTest.feature"
+  }
+]

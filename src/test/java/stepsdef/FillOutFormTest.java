@@ -13,6 +13,8 @@ public class FillOutFormTest {
     WebDriver driver;
     MainPage fillPage;
 
+    private String msg = "Kocham Twittme. Jeśli też go kochasz, to świetnie, napisz do mnie 751.";
+
     @Given("^User is on Tweetme\\.co$")
     public void userIsOnTweetmeCo() {
         System.setProperty("webdriver.gecko.driver", "src/test/resource/geckodriver");
@@ -33,7 +35,46 @@ public class FillOutFormTest {
     @Then("^The user is logged$")
     public void theUserIsLogged() {
         assertSame(fillPage.checkLogged(), true);
-        driver.close();
+      }
+
+    @When("^Entered message on Tweetme$")
+    public void enteredMessageOnTweetme() {
+        fillPage = new MainPage(this.driver);
+        fillPage.fillMessageForm(msg);
     }
 
+    @Then("^The message is displayed$")
+    public void theMessageIsDisplayed() throws InterruptedException {
+        Thread.sleep(1000);
+    //    assertSame(fillPage.checkLastMassageTweet(),"Nowy1 komentarz");
+        assertEquals(fillPage.checkLastMassageTweet(),msg);
+    }
+
+    @When("^The user is logged in Tweetme$")
+    public void theUserIsLoggedInTweetme() throws InterruptedException {
+        fillPage = new MainPage(this.driver);
+        fillPage.fillOutSecondForm("krzysztofKordecki", "specjalnosciowe");
+        assertSame(fillPage.checkLogged(), true);
+    }
+
+    @When("^The user is Chosed the registration field$")
+    public void theUserIsChosedTheRegistrationField() {
+        fillPage = new MainPage(this.driver);
+        fillPage.registrationSelection();
+        assertSame(fillPage.checkRegistrationSelection(),true);
+    }
+
+
+    @When("^Entered Username: \"([^\"]*)\", Email: \"([^\"]*)\", Password: \"([^\"]*)\"$")
+    public void enteredUsernameEmailPassword(String arg0, String arg1, String arg2) throws Throwable {
+        fillPage = new MainPage(this.driver);
+        fillPage.fillOutRegistrationForm(arg0,arg1,arg2);
+        assertSame(fillPage.checkLogged(), true);
+    }
+
+    @Then("^The user is registrated in Tweetme$")
+    public void theUserIsRegistratedInTweetme() {
+        assertSame(fillPage.checkLogged(), true);
+    //    driver.close();
+    }
 }

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="160.857193">
+<testcase classname="Tweetme Test" name="Registration on Tweetme" time="16.777667">
+<system-out><![CDATA[Given User is on Tweetme.co.................................................passed
+When The user is Chosed the registration field..............................passed
+When Entered Username: "nowyLogin85", Email: "nowy85@nowy.pl", Password: "nowyLogin85".passed
+Then The user is registrated in Tweetme.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Tweetme Test" name="Login the user in cases: &quot;Valid Username And Password&quot;" time="12.686463">
+<system-out><![CDATA[Given User is on Tweetme.co.................................................passed
+When Entered Login: "krzysztofKordecki" and Password: "specjalnosciowe".....passed
+Then The user is logged.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Tweetme Test" name="Write message on Tweetme" time="14.283745">
+<system-out><![CDATA[Given User is on Tweetme.co.................................................passed
+When The user is logged in Tweetme..........................................passed
+When Entered message on Tweetme.............................................passed
+Then The message is displayed...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Tweetme Test" name="Inviled login the user in cases: &quot;Empty Password&quot;" time="15.209389">
+<system-out><![CDATA[Given User is on Tweetme.co.................................................passed
+When Entered Login: "krzysztofKordecki" and Password: ""....................passed
+Then The user isn't logged..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Tweetme Test" name="Inviled login the user in cases: &quot;Empty Username&quot;" time="44.549122">
+<system-out><![CDATA[Given User is on Tweetme.co.................................................passed
+When Entered Login: "" and Password: "specjalnosciowe"......................passed
+Then The user isn't logged..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Tweetme Test" name="Inviled login the user in cases: &quot;Empty Username And Password&quot;" time="14.121879">
+<system-out><![CDATA[Given User is on Tweetme.co.................................................passed
+When Entered Login: "" and Password: "".....................................passed
+Then The user isn't logged..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Tweetme Test" name="Inviled login the user in cases: &quot;Invalid Username&quot;" time="14.519136">
+<system-out><![CDATA[Given User is on Tweetme.co.................................................passed
+When Entered Login: "bdsgdfhfd" and Password: "specjalnosciowe".............passed
+Then The user isn't logged..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Tweetme Test" name="Inviled login the user in cases: &quot;Invalid Password&quot;" time="14.074594">
+<system-out><![CDATA[Given User is on Tweetme.co.................................................passed
+When Entered Login: "krzysztofKordecki" and Password: "4ererererer".........passed
+Then The user isn't logged..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Tweetme Test" name="Inviled login the user in cases: &quot;Invalid Username And Password&quot;" time="14.635198">
+<system-out><![CDATA[Given User is on Tweetme.co.................................................passed
+When Entered Login: "fgffbdfhghh" and Password: "bgh6tgj6q5"................passed
+Then The user isn't logged..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
